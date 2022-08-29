@@ -1,11 +1,10 @@
 x = int(input("Número de entrada: "))
 
-anterior = x
-soma = x
-proxima = x + soma 
+lista = []
+lista.append(0)
+lista.append(1)
 
-for soma in range(0,11):
-    print(f'{anterior}, ', end="")
-    soma = proxima + anterior
-    anterior = proxima
-    proxima = soma
+for number in range(2, 9 + x):
+    lista.append(lista[number - 1] + lista[number - 2])
+
+print(lista[x - 1:])
