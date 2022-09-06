@@ -20,7 +20,6 @@ class Pedido:
         
     def __str__(self):
         preco = str(self.preco)
-        
         return self.nome + " x " + estoque + " --> R$ " + preco 
 
 
@@ -29,7 +28,7 @@ class Pedido:
 def main():
     objeto01 = Item('Arroz', 10.0, 30) 
     pedido = Pedido('debito')
-    pedido.adicionaritens(objeto01, 5)
+    pedido.adicionaritens(objeto01, 10)
 
     print("--------------------")
     print("Supermecado do André")
@@ -38,7 +37,9 @@ def main():
     print(objeto01)
     print("")
     print("--------------------")
+    print("Valor a ser pago: ",end="")
     print(pedido.total)
+    print("--------------------")
 
 if __name__ == '__main__':
     main()
