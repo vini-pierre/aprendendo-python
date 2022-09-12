@@ -22,9 +22,6 @@ class Pedido:
         preco = str(self.preco)
         return self.nome + " x " + estoque + " --> R$ " + preco 
 
-
-
-
 def main():
     objeto01 = Item('Arroz', 10.0, 30) 
     pedido = Pedido('debito')
