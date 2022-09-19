@@ -8,7 +8,7 @@ cursor = conn.cursor()
 cursor.execute('UPDATE Author SET Name = ? WHERE AuthorID = ?', ('Vini Pierre', 1))
 
 #Update Post
-
+cursor.execute('UPDATE Post SET Title = ? WHERE PostID = ?', ('feijão', 1))
 
 conn.commit()
 

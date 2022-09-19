@@ -8,6 +8,7 @@ cursor = conn.cursor()
 cursor.execute('DELETE FROM Author WHERE AuthorID = 1')
 
 #Delete Post
+cursor.execute('DELETE FROM Post WHERE PostID = 1')
 
 conn.commit()
 
